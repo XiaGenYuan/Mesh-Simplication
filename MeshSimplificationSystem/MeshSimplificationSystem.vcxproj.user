@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <QTDIR>D:\SoftwareInstall\qt4.8.0</QTDIR>
+    <LocalDebuggerEnvironment Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">PATH=$(QTDIR)\bin%3bC:\Program Files\VTK\bin\$(Platform)\$(Configuration);$(QTDIR)\lib;%(AdditionalLibraryDirectories)$(PATH)</LocalDebuggerEnvironment>
+    <LocalDebuggerEnvironment Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">PATH=$(QTDIR)\bin%3bD:\File\VTK6.0\bin\$(Platform)\$(Configuration);$(QTDIR)\lib;%(AdditionalLibraryDirectories)$(PATH)</LocalDebuggerEnvironment>
+    <DebuggerFlavor Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">WindowsLocalDebugger</DebuggerFlavor>
+    <DebuggerFlavor Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">WindowsLocalDebugger</DebuggerFlavor>
+  </PropertyGroup>
+</Project>

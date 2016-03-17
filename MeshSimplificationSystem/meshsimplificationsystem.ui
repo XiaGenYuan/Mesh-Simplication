@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MeshSimplificationSystemClass</class>
+ <widget class="QMainWindow" name="MeshSimplificationSystemClass">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>913</width>
+    <height>609</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MeshSimplificationSystem</string>
+  </property>
+  <widget class="QWidget" name="centralWidget"/>
+  <widget class="QMenuBar" name="menuBar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>913</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuFile">
+    <property name="title">
+     <string>File</string>
+    </property>
+    <addaction name="action_open"/>
+    <addaction name="action_saveas"/>
+   </widget>
+   <widget class="QMenu" name="menuEdit">
+    <property name="title">
+     <string>Edit</string>
+    </property>
+    <addaction name="action_mesh_simplification"/>
+    <addaction name="action_recover"/>
+   </widget>
+   <addaction name="menuFile"/>
+   <addaction name="menuEdit"/>
+  </widget>
+  <widget class="QToolBar" name="mainToolBar">
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+   <addaction name="action_open"/>
+   <addaction name="action_saveas"/>
+   <addaction name="action_mesh_simplification"/>
+   <addaction name="action_recover"/>
+  </widget>
+  <widget class="QStatusBar" name="statusBar"/>
+  <action name="action_open">
+   <property name="icon">
+    <iconset resource="meshsimplificationsystem.qrc">
+     <normaloff>:/MeshSimplificationSystem/Resources/file.png</normaloff>:/MeshSimplificationSystem/Resources/file.png</iconset>
+   </property>
+   <property name="text">
+    <string>Open</string>
+   </property>
+  </action>
+  <action name="action_mesh_simplification">
+   <property name="icon">
+    <iconset resource="meshsimplificationsystem.qrc">
+     <normaloff>:/MeshSimplificationSystem/Resources/simplification.png</normaloff>:/MeshSimplificationSystem/Resources/simplification.png</iconset>
+   </property>
+   <property name="text">
+    <string>Mesh Simplification</string>
+   </property>
+  </action>
+  <action name="action_saveas">
+   <property name="icon">
+    <iconset resource="meshsimplificationsystem.qrc">
+     <normaloff>:/MeshSimplificationSystem/Resources/saveas.png</normaloff>:/MeshSimplificationSystem/Resources/saveas.png</iconset>
+   </property>
+   <property name="text">
+    <string>Save As</string>
+   </property>
+  </action>
+  <action name="action_recover">
+   <property name="icon">
+    <iconset resource="meshsimplificationsystem.qrc">
+     <normaloff>:/MeshSimplificationSystem/Resources/recover.png</normaloff>:/MeshSimplificationSystem/Resources/recover.png</iconset>
+   </property>
+   <property name="text">
+    <string>Recover</string>
+   </property>
+  </action>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources>
+  <include location="meshsimplificationsystem.qrc"/>
+ </resources>
+ <connections/>
+</ui>

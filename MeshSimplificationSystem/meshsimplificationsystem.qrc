@@ -1,0 +1,8 @@
+<RCC>
+    <qresource prefix="/MeshSimplificationSystem">
+        <file>Resources/simplification.png</file>
+        <file>Resources/file.png</file>
+        <file>Resources/saveas.png</file>
+        <file>Resources/recover.png</file>
+    </qresource>
+</RCC>
